@@ -1,0 +1,9 @@
+.box{
+    border-color: black;
+    border-style: solid;
+}
+.boxc{
+    border: 1cm;
+    border-color: blue;
+    border-style: inset;
+}
