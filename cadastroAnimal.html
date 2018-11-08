@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="index.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+    <title>Cadastro Animal</title>
+</head>
+<body>
+<form id="_FormContactInfo">
+
+    <h2>Cadastro Animal</h2>
+    <div id="_DadosAnimal" class="dadosAnimal">
+        Nome: <input type="text" id="_Nome" placeholder="Rex">
+        Senha: <input type="password" id="_Senha" >
+
+        <legend>Qual seu animal favorito?</legend>
+
+        <input type="radio" name="_Animal" id="_Animal1" value="Cat"  />Gato<br />
+        <input type="radio" name="_Animal" id="_Animal2" value="Dog"  />Cachorro<br />
+        <input type="radio" name="_Animal" id="_Animal3" value="Bird" />Passarinho<br />
+
+        <p/>
+        Nascimento:<input name="_DataNascimento" type="date" />
+
+        <p/>
+        Endereço: <input type="text" id="_Endereco" placeholder="digite sua rua">
+        Numero: <input name="_NumeroCasa" type="number" placeholder="100"/>
+        CEP: <input name="CEP" id="CEP" required pattern="\d{5}-?\d{3}" placeholder="999-99999"/>
+
+        <p/>
+        Endereço Email:<input name="_eMail" type="email"  placeholder="nome@email.com"/>
+
+        <p/>
+        Cor do Animal:<input type="color" id="_CorAnimal">
+
+        <p/>
+        Satisfação do Atendimento: 0 <input name="_SatisfacaoAtendimento" type="range" min="5" max="100" step="5" /> 100
+
+        <p/>
+        <select id="_Especies">
+            <option value="cao">Chachorros</option>
+            <option value="gato" selected="selected">Gatos</option>
+            <option value="passaro">Passáros</option>
+            <option value="roedor">Roedores</option>
+            <option value="grande porte">Animais grande porte</option>
+        </select>
+
+        <p/>
+        <label for="_TextoMultiLine">Descrição do Animal</label><p/>
+        <textarea id="_TextoMultiLine" cols="40" rows="6"></textarea>
+
+    </div>
+</form>
+</body>
+</html>
