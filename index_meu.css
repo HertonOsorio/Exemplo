@@ -4,11 +4,6 @@
     solid-opacity: 0.8;
     color: #143464;
 }
-.logo{
-    margin-left:75%;
-    border: brown;
-    border-style: solid;
-}
 
 .boxc{
     border-style: solid;
@@ -17,6 +12,19 @@
     color: #641d19;
 }
 
+.tamanhoForm{
+    margin: 80%;
+
+}
+.tituloForm{
+    color: #0099cc;
+    font-size: 0.8cm;
+}
+
+.subtituloForm{
+    color: cadetblue;
+    font-size: 0.4cm;
+}
 
 body {
     font-family: Verdana,sans-serif;
@@ -28,17 +36,25 @@ header, footer {
     color: white;
     background-color: #0f7a80;
 }
-
+-->
 section {
     margin: 5px;
     padding: 10px;
-    background-color: lightgrey;
+/*    background-color: lightgrey;*/
 }
 
 article {
     margin: 5px;
     padding: 10px;
     background-color: white;
+}
+
+.field {
+    margin: 3px;
+}
+
+.trademark{
+    font-size: 0.3cm;
 }
 
 nav ul {
@@ -64,6 +80,9 @@ video{
     height: 20px;
 }*/
 
+
+
+/*
 progress[value]::-moz-progress-bar {
     background-image:
             -moz-linear-gradient(
@@ -86,80 +105,4 @@ progress[value]::-moz-progress-bar {
 
     border-radius: 2px;
     background-size: 35px 20px, 100% 100%, 100% 100%;
-}
-
-.verde {
-    color: green;
-    alignment: center;
-}
-.vermelho {
-    color: red;
-    alignment: center;
-}
-
-.valor{
-    font-family: "Courier New";
-    alignment: right;
-}
-.lista{
-    width: 80%;
-    margin: 2%;
-    padding: 2%;
-    background-color: #c9e8ff;
-    color: #18640c;
-}
-
-table{
-    width: 95%;
-    margin: 2%;
-    border: 0.5px;
-    background-color: #faf4f7;
-
-}
-
-table caption{
-    width: 100%;
-    font-size: x-large;
-    font-style: italic;
-    margin-bottom: 2%;
-}
-
-.card {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-}
-
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-/* Add some padding inside the card container */
-.container {
-    padding: 2px 16px;
-}
-.formulario{
-    width: 100%;
-}
-.dadosAnimal{
-    width: 80%;
-    border-right: 5px;
-    border-left-style: solid;
-    border-color: #641710;
-    padding: 2%;
-    margin: 5%;
-}
-
-.numero{
-    width: 50px;
-}
-
-.cep{
-    width: 70px;
-}
-
-.botaoes{
-    width: 80%;
-    float: right;
-}
+}*/
