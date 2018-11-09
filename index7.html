@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Aula04</title>
+</head>
+<body>
+  <div>
+  <form id="aSimpleForm" method="post" action="">
+          <h1 class="tituloForm">A Simple Form</h1>
+          <h2 class="subtituloForm"><em>Form Fundamentals</em></h2>
+      <fieldset>
+      <legend>Customer Info</legend>
+      <section>
+          Name: <input class="field" type="text" id="_Name" placeholder="Enter your name"/></br>
+          Telephone: <input class="field" type="text" required id="_Telephone" pattern="(?\d{2})?\d{4}-?{4}" placeholder="Enter your phone"/></br>
+          Email address: <input class="field" type="email" id="_Email" placeholder="Enter your email address"/>
+      </section>
+      </fieldset>
+      <fieldset>
+      <legend>Books</legend>
+      <section>
+          <input type="text" id="_Book"/>
+          Quantity (Maximum 5): <input type="number"/>
+      </section>
+      </fieldset>
+      <input class="field" type="button" id="_Submit" value="Submit"/>
+      <section class="trademark">
+          <i class="far fa-copyright"></i>2011 Acme United. All rights reserved.
+      </section>
+  </form>
+  </div>
+</body>
+</html>
