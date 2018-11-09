@@ -12,6 +12,19 @@
     color: #641d19;
 }
 
+.tamanhoForm{
+    margin: 80%;
+
+}
+.tituloForm{
+    color: #0099cc;
+    font-size: 0.8cm;
+}
+
+.subtituloForm{
+    color: cadetblue;
+    font-size: 0.4cm;
+}
 
 body {
     font-family: Verdana,sans-serif;
@@ -23,17 +36,25 @@ header, footer {
     color: white;
     background-color: #0f7a80;
 }
-
+-->
 section {
     margin: 5px;
     padding: 10px;
-    background-color: lightgrey;
+/*    background-color: lightgrey;*/
 }
 
 article {
     margin: 5px;
     padding: 10px;
     background-color: white;
+}
+
+.field {
+    margin: 3px;
+}
+
+.trademark{
+    font-size: 0.3cm;
 }
 
 nav ul {
