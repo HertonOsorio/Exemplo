@@ -1,0 +1,62 @@
+/*
+div {
+    width: 200px;
+    padding: 20px;
+    border: 20px solid gray;
+    margin: 10px;
+}
+*/
+
+
+.tudo {
+    width: 70%;
+    height: 100px;
+    margin: 2%;
+    padding-top: 2%;
+    background-color: #0099cc;
+}
+
+.menu {
+    float: left;
+    width: 30%;
+    margin-left: 2%;
+    background-color: #ffb44e;
+}
+
+.conteudo {
+    margin-left: 35%;
+    width: 60%;
+    background-color: #faf4f7;
+}
+.clear { clear: both; }
+
+
+.div-image {
+    border-color: black;
+    border-style: solid;
+
+    margin-left: 2%;
+    background-image: url("../images/vector-sky-purple-night-4.png");
+
+    background-repeat: no-repeat;
+    background-position: center;
+
+    line-height: 300px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+}
+
+.div-varias-images {
+    border-color: black;
+    border-style: solid;
+
+    width: 600px;
+    height: 500px;
+    background: url("../images/header-logo_v2.png") top left repeat-X,
+    url("../images/vector-sky-purple-night-4.png") bottom left repeat-Y;
+
+    margin-top: 2%;
+    margin-left: 2%;
+}
