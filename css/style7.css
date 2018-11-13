@@ -36,3 +36,14 @@ p.fonte-colorida {
     text-align: center;
     padding: 5%;
 }
+
+img {
+    width: 200px;
+    height: 200px;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+img:hover{
+    transform: rotate(360deg);
+    opacity: 0.5;
+}
