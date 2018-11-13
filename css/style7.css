@@ -1,0 +1,38 @@
+body {
+    font-family: "Verdana", Times, serif;
+}
+
+.container {
+    border: black solid;
+    width: 650px;
+    height: 400px;
+}
+
+.divTest {
+    width: 300px;
+    height: 150px;
+    margin: 2%;
+    padding: 2%;
+    background: #0f7a80;
+    position: relative;
+/*    -webkit-animation: mymove 5s infinite; !* Safari 4.0 - 8.0 *!*/
+    animation: mymove 4s infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+
+@font-face {
+    font-family: colortube;
+    src: local("../fonts/ColorTube.otf"),  url("../fonts/ColorTube.otf");
+}
+
+p.fonte-colorida {
+    font: 36px colortube, Sans-serif;
+    text-align: center;
+    padding: 5%;
+}

@@ -1,0 +1,63 @@
+body{
+    font-family: "Verdana", Times, serif;
+}
+
+.container{
+    width: 400px;
+    height: 600px;
+}
+.div-teste {
+    border-style: solid;
+    transform: translate(130px, 100px); /* move elemento 13px em X e 10px em Y */
+
+}
+
+.div-teste1{
+    margin: 30% 5% 5% 5%;
+    border-style: solid;
+    transform: skewY(10deg);
+}
+
+
+.div-teste2 {
+    margin: 30% 5% 5% 5%;
+    border-style: solid;
+  /*  transform: rotate(30deg); !* rotaciona 30' no sentido horário *!*/
+    transform: rotate(-45deg); /* rotaciona 45' no sentido anti-horário */
+/*    transform: rotate(2rad); !* rotaciona ~ 144,59' no sentido horário *!
+    transform: rotate(0.5turn); !* rotaciona meia-volta no sentido horário *!*/
+}
+
+
+.div-teste3 {
+    margin: 30% 5% 5% 35%;
+    border-style: solid;
+    transform: scale(2, 0.5);       /* dobra o tamanho do elemento em todas as direções */
+  /*  transform: scale(2, 3);   !* dobra a largura e triplica a altura *!
+    transform: scaleX(0.5);  !* reduz largura do elemento pela metade *!
+    transform: scaleY(2);     !* deixa o elemento duas vezes mais alto *!*/
+}
+
+div-teste:hover {
+    width: 800px;
+}
+
+.box {
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30%;
+    background-color: #0000FF;
+/*    -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;*/
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.box:hover {
+    background-color: #FFCCCC;
+    width: 200px;
+    height: 200px;
+/*    -webkit-transform: rotate(180deg);*/
+    transform: rotate(180deg);
+}

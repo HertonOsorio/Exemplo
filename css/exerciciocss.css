@@ -1,0 +1,4 @@
+tr:nth-child(odd){
+   color: #000066;
+   background-color: grey;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="../js/index.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"
+            integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0"
+            crossorigin="anonymous"></script>
+    <title>Exercicio 2</title>
+</head>
+<body>
+<div class="containerCadastro">
+
+    <form id="_forExercicio2" method="post" action="">
+        <div class="tituloForm">
+            <h1 class="tituloForm">A Simple Form</h1>
+            <h2 class="subTituloForm">Form Fudamentals</h2>
+        </div>
+
+        <fieldset>
+            <legend>Customer Info</legend>
+            <div class="row">
+                <div class="column-3 column label">
+                    <label for="_name">Name:</label>
+                </div>
+                <div class="column-9 column input">
+                    <input id="_name" type="text" placeholder="Enter your name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="column-3 column label">
+                    <label for="_Phone">Telephone:</label>
+                </div>
+                <div class="column-9 column input">
+                    <input id="_Phone" type="text" required pattern="\d{1}-?\d{3}-?\d{3}-?\d{4}"
+                           placeholder="Parttern: 1-234-567-8910"><br/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column-3 column label">
+                    <label for="_Email">Email Address:</label>
+                </div>
+                <div class="column-9 column input">
+                    <input id="_Email" type="email" placeholder="Enter your e-mail address"><br/>
+                </div>
+            </div>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Books</legend>
+            <div class="row">
+                <div class="column-8 column input">
+                    <input id="_Book"/>
+                </div>
+                <div class="column-3 column label">
+                    <label for="_NumberBooks">Quanttity (Maximum 5)</label>
+                </div>
+                <div class="column-1 column input">
+                    <input id="_NumberBooks" type="number">
+                </div>
+            </div>
+        </fieldset>
+
+        <div class="botaoes">
+            <input class="myButton" id="_Submit" type="submit" value="Submit">
+            <input class="myButton" id="_Cacel" type="reset" value="Cancel">
+        </div>
+
+    </form>
+    <div class="rodape">
+        <span class="site-info"><i class="far fa-copyright"></i></span>
+    </div>
+</div>
+
+
+</body>
+</html>
+
