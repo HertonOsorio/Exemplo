@@ -73,10 +73,10 @@ div:last-child {
 /*Exemplos CSS 2*/
 
 h1 {
-    counter-increment: numero-do-titulo;
+    counter-increment: numero;
 }
 h1::before {
-    content: "Captiulo " counter(numero-do-titulo);
+    content: "Captiulo " counter(numero);
 }
 
 .divTest {
@@ -94,7 +94,7 @@ h1::before {
 }
 
 .divTest[title] {
-    background-color: #900;
+    background-color: #399914;
 }
 
 nav {
