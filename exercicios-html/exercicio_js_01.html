@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/index.js"></script>
+    <title>Exercicio JS 01</title>
+</head>
+<body>
+<div class="container-fluid">
+    <form id="_FormContactInfo">
+        <div class="col-sm-3">
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Parâmetro 01:</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="_Par01"
+                       aria-describedby="inputGroup-sizing-sm" placeholder="Digite o primeiro valor">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Parâmetro 02:</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="_Par02"
+                       aria-describedby="inputGroup-sizing-sm" placeholder="Digite o segundo valor">
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="soma(_Par01,_Par02)">Soma</button>
+        <button type="button" class="btn btn-danger onclick="subtrai(_Par01,_Par02)">Diminui</button>
+        <button type="button" class="btn btn-primary onclick="soma(_Par01,_Par02)">Multiplica</button>
+        <button type="button" class="btn btn-danger onclick="soma(_Par01,_Par02)">Divide</button>
+    </form>
+</div>
+</body>
+</html>

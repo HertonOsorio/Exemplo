@@ -4,20 +4,72 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="index.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <title>Cadastro Animal</title>
 </head>
 <body>
+<div class="container-fluid">
     <form id="_FormContactInfo">
-        Nome: <input type="text" id="_Nome" placeholder="Rex">
-        Senha: <input type="password" id="_Senha" >
+<!--        Nome: <input type="text" id="_Nome" placeholder="Rex">-->
+        <div class="col-sm-3">
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Nome:</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Sizing example input" id="_Nome"
+                       aria-describedby="inputGroup-sizing-sm" placeholder="Digite o Nome">
+            </div>
+<!--        Senha: <input type="password" id="_Senha" >-->
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Senha:</span>
+                </div>
+                <input type="password" class="form-control" aria-label="Sizing example input" id="_Senha"
+                       aria-describedby="inputGroup-sizing-sm" placeholder="Digite a Senha">
+            </div>
+        </div>
 
         <legend>Qual seu animal favorito?</legend>
 
-        <input type="radio" name="_Animal" id="_Animal1" value="Cat"  />Gato<br />
-        <input type="radio" name="_Animal" id="_Animal2" value="Dog"  />Cachorro<br />
-        <input type="radio" name="_Animal" id="_Animal3" value="Bird" />Passarinho<br />
+<!--        <input type="radio" name="_Animal" id="_Animal1" value="Cat"  />Gato<br />-->
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <input type="radio" aria-label="Radio button for following text input"
+                           name="_Animal" id="_Animal1" value="Cat"> Gato
+                    <input type="radio" aria-label="Radio button for following text input"
+                           name="_Animal" id="_Animal1" value="Dog"> Cachorro
+                    <input type="radio" aria-label="Radio button for following text input"
+                           name="_Animal" id="_Animal1" value="Bird"> Passarinho
+                </div>
+            </div>
+<!--            <input type="text" class="form-control" aria-label="Text input with radio button">Gato-->
+        </div>
+<!--                <input type="radio" name="_Animal" id="_Animal2" value="Dog"  />Cachorro<br />-->
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <input type="radio" aria-label="Radio button for following text input"
+                           name="_Animal" id="_Animal1" value="Dog"> Cachorro
+                </div>
+            </div>
+<!--            <input type="text" class="form-control" aria-label="Text input with radio button">Gato-->
+        </div>
+<!--                <input type="radio" name="_Animal" id="_Animal3" value="Bird" />Passarinho<br />-->
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <input type="radio" aria-label="Radio button for following text input"
+                           name="_Animal" id="_Animal1" value="Bird"> Passarinho
+                </div>
+            </div>
+<!--            <input type="text" class="form-control" aria-label="Text input with radio button">Gato-->
+        </div>
 
         <p/>
         Nascimento:<input name="_DataNascimento" type="date" />
@@ -54,7 +106,15 @@
         <hr/>
             Busca: <input name="_BuscarNome" type="search" placeholder="pesquisar..." />
         <hr/>
+<!--        div.row>div.col-sm-4*2 <TAB> forma de gerar as estrut divs automaticamente-->
+        <div class="row">
+            <div class="col-sm-4">Div 1</div>
+            <div class="col-sm-4">Div 2</div>
+        </div>
 
+        <button type="button" class="btn btn-primary">Enviar</button>
+        <button type="button" class="btn btn-danger">Cancelar</button>
     </form>
+</div>
 </body>
 </html>
