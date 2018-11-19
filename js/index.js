@@ -2,36 +2,55 @@ function salva() {
     alert("Animal Salvo")
 }
 
-function soma(par01 ,par02) {
+function soma() {
     var resultado = 0;
-    resultado = par01 + par02;
-    return resultado;
+    var par01 = document.getElementById("_Par01").value;
+    var par02 = document.getElementById("_Par02").value;
+    resultado = parseInt(par01) + parseInt(par02);
+    document.getElementById("_Par03").innerHTML = resultado;
 }
 
-function subtrai(par01, par02) {
+function subtrai() {
     var resultado = 0;
-    if ( par01 < par02 ){
+    var par01 = document.getElementById("_Par01").value;
+    var par02 = document.getElementById("_Par02").value;
+/*    if ( par01 < par02 ){
         alert("O primeiro parâmetro tem que ser maior que o segundo!");
     }
-    else{
-        resultado = par01 - par02;
-    }
-    return resultado;
+    else{*/
+        resultado = parseInt(par01) - parseInt(par02);
+    /*}*/
+    document.getElementById("_Par03").innerHTML = resultado;
 }
 
-function multiplica(par01, par02){
+function multiplica() {
     var resultado = 0;
-    resultado = par01 * par02;
-    return resultado;
+    var par01 = document.getElementById("_Par01").value;
+    var par02 = document.getElementById("_Par02").value;
+    resultado = parseInt(par01) * parseInt(par02);
+    document.getElementById("_Par03").innerHTML = resultado;
 }
 
 function divide(par01, par02){
     var resultado = 0;
-    if ( par02 == 0 ){
+    var par01 = document.getElementById("_Par01").value;
+    var par02 = document.getElementById("_Par02").value;
+    try {
+        if ( par02 == 0 ) throw "zero"
+            else {
+            resultado = parseInt(par01) / parseInt(par02);
+            document.getElementById("_Par03").innerHTML = resultado;
+        };
+    }
+    catch(err){
+        alert("Divisão por zero");
+    }
+/*    if ( par02 == 0 ){
         alert("O segundo parâmetro tem que ser diferente de zero!");
     }
     else{
-        resultado = par01 / par02;
+        resultado = parseInt(par01) / parseInt(par02);
     }
-    return resultado;
+    resultado = parseInt(par01) / parseInt(par02);
+    document.getElementById("_Par03").innerHTML = resultado;*/
 }

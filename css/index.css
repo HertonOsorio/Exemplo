@@ -7,8 +7,10 @@
 
 .box {
     border-style: solid;
-    box-shadow: #132e64;
-    solid-opacity: 0.8;
+/*    box-shadow: #132e64;
+    solid-opacity: 0.8;*/
+    width: 3cm;
+    height: 1cm;
     color: #143464;
 }
 
