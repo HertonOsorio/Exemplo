@@ -11,15 +11,14 @@ function trataImg(){
 }
 
 function altImg(){
-    var el = document.getElementById('_img');
-    var meuid = '_img1'; /* = document.getElementById("");*/
+    var el = document.getElementById("_img");
+    var meuid = ""; /* = document.getElementById("");*/
 
     el.addEventListener('click', function(e) {
         meuid = e.target.id;
-        alert(meuid);
-    });
 
-    document.getElementById(meuid).src = "../images/moana01.jpg";
-    document.getElementById(meuid).style.width = "100px";
-    document.getElementById(meuid).style.height = "100px";
+        document.getElementById(meuid).src = "../images/moana01.jpg";
+        document.getElementById(meuid).style.width = "100px";
+        document.getElementById(meuid).style.height = "100px";
+    });
 }
