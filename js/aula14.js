@@ -22,3 +22,31 @@ function altImg(){
         document.getElementById(meuid).style.height = "100px";
     });
 }
+
+function mostrar(){
+    var evento = (event.which?event.which:mousedown.event);
+    var txtcampo = "O Cássio é um amado mestre!! !)";
+    var ok = "N";
+
+    if ( evento.value = 1 ) {
+        ok = "S";
+
+    }
+    if ( ok == "S"){
+        document.getElementById("_campo").innerHTML = txtcampo;
+    }
+}
+
+function myTime(){
+    var myVar = setInterval(function() { myTimer() }, 1000);
+}
+
+function myTimer(){
+    var d = new Date();
+    var t = d.toLocaleTimeString();
+    document.getElementById("demo").innerHTML = t;
+}
+
+function myStopFunction(){
+    clearInterval();
+}
